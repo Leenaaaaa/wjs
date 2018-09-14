@@ -1,0 +1,47 @@
+// 这个注释编译不了
+/*我是可以编译的注释*/
+@baseColor: #e92322;
+a {
+  color: @baseColor;
+}
+
+h2 {
+  color: @baseColor;
+}
+
+ .addRadius(@R: 10px) {
+   border-radius: @R;
+   -webkit-border-radius: @R;
+   -moz-border-radius: @R;
+ }
+  div {
+    width: 200px;
+    height: 200px;
+    .addRadius(89px);
+  }
+
+
+.div{
+  width: 20px;
+  height: 20px;
+  >ul {
+    width: 20px;
+    height: 20px;
+    >div {
+
+      width: 100%;
+      height: 20px;
+      &::before {
+        content:"";
+      }
+
+       a{
+         text-decoration: none;
+         &:hover {
+           text-decoration: none;
+         }
+       }
+    }
+
+  }
+}

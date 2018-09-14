@@ -1,0 +1,35 @@
+/*我是可以编译的注释*/
+a {
+  color: #e92322;
+}
+h2 {
+  color: #e92322;
+}
+div {
+  width: 200px;
+  height: 200px;
+  border-radius: 89px;
+  -webkit-border-radius: 89px;
+  -moz-border-radius: 89px;
+}
+.div {
+  width: 20px;
+  height: 20px;
+}
+.div > ul {
+  width: 20px;
+  height: 20px;
+}
+.div > ul > div {
+  width: 100%;
+  height: 20px;
+}
+.div > ul > div::before {
+  content: "";
+}
+.div > ul > div a {
+  text-decoration: none;
+}
+.div > ul > div a:hover {
+  text-decoration: none;
+}
